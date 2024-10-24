@@ -1,0 +1,12 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+    - apt install -y maven
+  build:
+    commands:
+    - mvn clean package
+artifacts:
+  files:
+    - '**/*'     
